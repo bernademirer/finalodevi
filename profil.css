@@ -1,0 +1,116 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;/*headerın kapladıgı alanı dengelemk için*/
+    background-color: #14171c;
+    color: #95a5a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;/*body içeriklerinin  düzgün sıralanması için*/
+  }
+
+header .logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#2C343F;
+  position: absolute;/*header sabitle*/
+  top: 0;
+  width: 100% ;/*header genişliğini tam yap*/
+  z-index: 10/*header diğer içeriklerin üstünde durur*/;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #95a5a6;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #00e054;
+}
+
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.profile-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 20px;
+}
+
+.profile-info h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.profile-info p {
+  font-size: 16px;
+  color: #95a5a6;
+  margin-bottom: 5px;
+}
+
+button {
+  background-color:#00e054;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#ff8000;
+}
+
+
+.profile-body {
+  margin-bottom: 30px;
+}
+
+.profile-body h2 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.movie-list {
+  display: flex;
+  gap: 20px;
+}
+
+.movie {
+  text-align: center;
+}
+
+.movie img {
+  width: 150px;
+  height: 200px;
+  border-radius: 10px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.movie p {
+  font-size: 16px;
+  color: #95a5a6;
+}
+
+

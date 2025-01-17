@@ -1,0 +1,92 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+    background-color: #14171c;
+    color: #95a5a6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+  }
+
+header .logo {
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color:#2C343F;
+  position: absolute;
+  top: 0;
+  width: 100% ;
+  z-index: 10/*header diğer içeriklerin üstünde durur*/;
+}
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+}
+header nav ul li a {
+  text-decoration: none;
+  color: #95a5a6;
+  transition: color 0.3s;
+}
+header nav ul li a:hover {
+  color: #00e054;
+}
+h1 {
+  margin-bottom: 10px;
+  font-size: 36px;
+  text-align: center;
+}
+p {
+  font-size: 18px;
+  color: #bbb;
+  text-align: center;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+input{
+  padding: 10px;
+  font-size: 16px;
+  border: #95a5a6;
+  border-radius: 5px;
+  background: #2C343F;
+  color: #95a5a6;
+}
+input::placeholder{
+  color: #666;
+}
+button{
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #00e054;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 50px ;
+
+}
+button:hover{
+  background: 	#ff8000;
+}
+.switch span{
+  color: #00e054;
+  cursor: pointer;
+  font-weight: bolder;
+  text-decoration: solid;
+}
+.hidden{
+  display: none;
+}
